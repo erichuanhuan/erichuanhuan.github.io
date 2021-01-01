@@ -141,6 +141,123 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://erichuanhuan.github.io/post/20201227%E8%BF%90%E5%8A%A8/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://erichuanhuan.github.io/post/20201227%E8%BF%90%E5%8A%A8/">
+            一起来投篮吧
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-01-01</span>
+            
+        
+
+        
+
+        
+
+        
+    </div>
+
+    
+        一起来投篮吧 
+
+        
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">
+            树莓派AIS/ADS-B合二为一 
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-01-01</span>
+            
+        
+
+        
+
+        
+
+        
+    </div>
+
+    
+        树莓派AIS/ADS-B合二为一  12/31/2019 6:11:23 PM
+参考 https://pypi.org/project/pyrtlsdr/#description
+1. 电视棒序列号设置 使用 rtl_eeprom -s 00000101，注意：序列号尽量不要设置为 00000001或00000002，可能会跟索引冲突，可以设置为00000101、00000102、00000103等。
+选择 &ldquo;y&rdquo;，显示修改成功。
+安装完成后，可以使用rtl_test进行查看。
+2. 软件安装部署 1）安装pyrtlsdr 使用pip install pyrtlsdr命令安装
+安装完成之后，可使用下面命令进行测试：
+from rtlsdr import RtlSdr sdr = RtlSdr() # configure device sdr.sample_rate = 2.048e6 # Hz sdr.center_freq = 70e6 # Hz sdr.freq_correction = 60 # PPM sdr.gain = 'auto' print(sdr.read_samples(512)) 2）新建 search_device_index.py文件 from rtlsdr import RtlSdr# Get a list of detected device serial numbers (str)# serial_numbers = RtlSdr.
+
+        
+            <a href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://erichuanhuan.github.io/post/one/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -215,6 +332,14 @@ CREATE TABLE ais_message_5_realtime SELECT * FROM ais_message_5 WHERE 1=2
             <strong>Latest posts</strong>
             <ul>
                 
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/20201227%E8%BF%90%E5%8A%A8/">一起来投篮吧</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">树莓派AIS/ADS-B合二为一 </a>
+                    </li>
                 
                     <li>
                         <a href="https://erichuanhuan.github.io/post/one/">one</a>

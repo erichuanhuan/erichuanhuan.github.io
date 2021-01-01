@@ -14,17 +14,17 @@
     <title>
         
            
-               one &vert; 李建儒测试博客
+               树莓派AIS/ADS-B合二为一  &vert; 李建儒测试博客
            
         
     </title>
-    <meta name="description" content="one - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="one">
-    <meta itemprop="description" content="one - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="one">
-    <meta property="og:description" content="one - Bilberry Premium Theme for Hugo.">
+    <meta name="description" content="树莓派AIS/ADS-B合二为一  - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="树莓派AIS/ADS-B合二为一 ">
+    <meta itemprop="description" content="树莓派AIS/ADS-B合二为一  - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="树莓派AIS/ADS-B合二为一 ">
+    <meta property="og:description" content="树莓派AIS/ADS-B合二为一  - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://erichuanhuan.github.io/post/one/">
+    <meta property="og:url" content="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">
     <meta property="og:site_name" content="李建儒测试博客">
     <meta property="og:type" content="article">
 
@@ -34,8 +34,8 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/post/one/" rel="alternate" type="application/rss+xml" title="李建儒测试博客" />
-    <link href="/post/one/" rel="feed" type="application/rss+xml" title="李建儒测试博客" />
+    <link href="/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/" rel="alternate" type="application/rss+xml" title="李建儒测试博客" />
+    <link href="/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/" rel="feed" type="application/rss+xml" title="李建儒测试博客" />
     
 
     
@@ -124,7 +124,7 @@
         
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://erichuanhuan.github.io/post/one/">
+            <a class="bubble" href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -133,15 +133,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://erichuanhuan.github.io/post/one/">
-            one
+        <a href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">
+            树莓派AIS/ADS-B合二为一 
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-01-02</span>
+                <span class="date moment">2021-01-01</span>
             
         
 
@@ -155,11 +155,79 @@
     
         
 
-        <h1 id="操作云端mysql数据库">操作云端MySql数据库</h1>
-<p>新建表：</p>
-<p>注意 报1046错时，鼠标双击左边数据库</p>
-<pre><code>CREATE TABLE ais_message_5_realtime SELECT * FROM ais_message_5 WHERE 1=2
+        <h1 id="树莓派aisads-b合二为一">树莓派AIS/ADS-B合二为一 </h1>
+<p>12/31/2019 6:11:23 PM</p>
+<p>参考 <a href="https://pypi.org/project/pyrtlsdr/#description" title="pyrtlsdr">https://pypi.org/project/pyrtlsdr/#description</a></p>
+<h2 id="1-电视棒序列号设置">1. 电视棒序列号设置</h2>
+<p>使用 <code>rtl_eeprom -s 00000101</code>，注意：序列号尽量不要设置为 00000001或00000002，可能会跟索引冲突，可以设置为00000101、00000102、00000103等。</p>
+<p><img src=".%5Cpic%5C1.png" alt=""></p>
+<p>选择 &ldquo;y&rdquo;，显示修改成功。</p>
+<p><img src=".%5Cpic%5C2.png" alt=""></p>
+<p>安装完成后，可以使用<code>rtl_test</code>进行查看。</p>
+<h2 id="2-软件安装部署">2. 软件安装部署</h2>
+<h3 id="1安装pyrtlsdr">1）安装pyrtlsdr</h3>
+<p>使用<code>pip install pyrtlsdr</code>命令安装</p>
+<p>安装完成之后，可使用下面命令进行测试：</p>
+<pre><code>from rtlsdr import RtlSdr    
+sdr = RtlSdr()    
+# configure device    
+sdr.sample_rate = 2.048e6  # Hz    
+sdr.center_freq = 70e6 # Hz    
+sdr.freq_correction = 60   # PPM    
+sdr.gain = 'auto'    
+print(sdr.read_samples(512))
 </code></pre>
+<h3 id="2新建-search_device_indexpy文件">2）新建 search_device_index.py文件</h3>
+<pre><code>from rtlsdr import RtlSdr
+# Get a list of detected device serial numbers (str)
+# serial_numbers = RtlSdr.get_device_serial_addresses()
+
+device_index = RtlSdr.get_device_index_by_serial('00000101')
+print('SN:00000101  ' + str(device_index))
+
+device_index = RtlSdr.get_device_index_by_serial('00000102')
+print('SN:00000102  ' + str(device_index))
+</code></pre>
+<p>注意：00000101代码一定要写成电视棒刚才设置的序列号。否则会报错，ERROR -3。</p>
+<h3 id="3新建adsaissh文件">3)新建adsais.sh文件</h3>
+<pre><code>#!/bin/bash
+
+python /home/pi/code/search_device_index.py &gt; /home/pi/code/outputString.txt
+sleep 1s
+for  line  in  `cat /home/pi/code/outputString.txt`
+do
+  echo ${line}
+  if [ ${line} = &quot;SN:00000101&quot; ]; then
+  a_signal=&quot;ads-b&quot;
+  continue
+  elif [ ${line} = &quot;SN:00000102&quot; ]; then
+  a_signal=&quot;ais&quot;
+  continue
+  fi
+ 
+  if [ ${a_signal} = &quot;ais&quot; ]; then
+  cd /home/pi/code/rtlais
+  sudo ./rtl_ais -n -h 192.168.10.200 -P 50003 &amp;
+  sleep 1s
+  continue
+  elif [ ${a_signal} = &quot;ads-b&quot; ]; then
+  cd /home/pi/code/adsb
+  sudo ./dump1090 --raw &amp;
+  sleep 1s
+  continue
+  fi
+done
+</code></pre>
+<p>注意：/home/pi/code/search_device_index.py 必须要增加文件路径，否则开机无法自动启动。</p>
+<h3 id="4设置开机自启动">4）设置开机自启动</h3>
+<p>执行命令： <code>chmod 777 adsais.sh</code></p>
+<p>输入命令：	<code>sudo nano /etc/rc.local</code></p>
+<p><img src=".%5Cpic%5C3.png" alt=""></p>
+<p>开机测试，可以正常运行。</p>
+<h1 id="总结">总结</h1>
+<p>1）由于在sh文件中使用了例子中的序列号，导致程序一直报 error -3 的错误，花了较多时间。</p>
+<p>2）开机启动的问题：一定要设置好文件路径。</p>
+<p>3）潜在的问题：程序运行后，使用 CTRL + C 无法终止运行。</p>
 
     
 </div>
