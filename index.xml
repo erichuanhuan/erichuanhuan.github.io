@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>李建儒测试博客</title>
-    <link>https://erichunahuan.github.io/</link>
+    <link>https://erichuanhuan.github.io/</link>
     <description>Recent content on 李建儒测试博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 02 Jan 2020 09:53:44 +0800</lastBuildDate>
     
-        <atom:link href="https://erichunahuan.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://erichuanhuan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>one</title>
-      <link>https://erichunahuan.github.io/post/one/</link>
+      <link>https://erichuanhuan.github.io/post/one/</link>
       <pubDate>Thu, 02 Jan 2020 09:53:44 +0800</pubDate>
       
-      <guid>https://erichunahuan.github.io/post/one/</guid>
+      <guid>https://erichuanhuan.github.io/post/one/</guid>
       <description>操作云端MySql数据库 新建表：
 注意 报1046错时，鼠标双击左边数据库
 CREATE TABLE ais_message_5_realtime SELECT * FROM ais_message_5 WHERE 1=2 </description>

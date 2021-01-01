@@ -3,72 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://erichunahuan.github.io/de/author/</loc>
+    <loc>https://erichuanhuan.github.io/de/author/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://erichunahuan.github.io/author/"
+                href="https://erichuanhuan.github.io/author/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://erichunahuan.github.io/de/author/"
+                href="https://erichuanhuan.github.io/de/author/"
                 />
   </url>
   
   <url>
-    <loc>https://erichunahuan.github.io/de/categories/</loc>
+    <loc>https://erichuanhuan.github.io/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://erichunahuan.github.io/categories/"
+                href="https://erichuanhuan.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://erichunahuan.github.io/de/categories/"
+                href="https://erichuanhuan.github.io/de/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://erichunahuan.github.io/de/</loc>
+    <loc>https://erichuanhuan.github.io/de/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://erichunahuan.github.io/"
+                href="https://erichuanhuan.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://erichunahuan.github.io/de/"
+                href="https://erichuanhuan.github.io/de/"
                 />
   </url>
   
   <url>
-    <loc>https://erichunahuan.github.io/de/series/</loc>
+    <loc>https://erichuanhuan.github.io/de/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://erichunahuan.github.io/series/"
+                href="https://erichuanhuan.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://erichunahuan.github.io/de/series/"
+                href="https://erichuanhuan.github.io/de/series/"
                 />
   </url>
   
   <url>
-    <loc>https://erichunahuan.github.io/de/tags/</loc>
+    <loc>https://erichuanhuan.github.io/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://erichunahuan.github.io/tags/"
+                href="https://erichuanhuan.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://erichunahuan.github.io/de/tags/"
+                href="https://erichuanhuan.github.io/de/tags/"
                 />
   </url>
   
