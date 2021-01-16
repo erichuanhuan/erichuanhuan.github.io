@@ -232,6 +232,62 @@ from rtlsdr import RtlSdr sdr = RtlSdr() # configure device sdr.sample_rate = 2.
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://erichuanhuan.github.io/post/20200116/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://erichuanhuan.github.io/post/20200116/">
+            one
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-01-16</span>
+            
+        
+
+        
+
+        
+
+        
+    </div>
+
+    
+        Python网络爬虫获取电离图图片 应邀初次尝试使用python爬取指定网站的电离图图片，网上一通搜索，基本明白了。现在整理如下：
+需求 从https://lgdc.uml.edu/common/DIDBDayStationStatistic?ursiCode=YA462&amp;year=2017&amp;month=1&amp;day=13这个网站获取指定年度的电离图图片，后期会采用图形识别的方式获取数据。
+查找链接 源码查看可知，基本链接为 https://lgdc.uml.edu/common/DIDBDayStationStatistic?ursiCode=YA462&amp;year=2017&amp;month=1&amp;day=1，该页面中的图片的链接为https://lgdc.uml.edu:443/common/ShowIonogram?mid=24349596，也就是说只要获取到mid “24349596”这个值就可以进行页面响应了。
+基本代码 import requestsimport refrom bs4 import BeautifulSoupfrom urllib import requesthd={'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'}# 输入主网页# murl = &quot;https://lgdc.uml.edu/common/DIDBDayStationStatistic?ursiCode=YA462&amp;year=2017&amp;month=1&amp;day=1&quot;for day in range(10,15):# 要请求的网络地址url = 'https://lgdc.uml.edu/common/DIDBDayStationStatistic?ursiCode=YA462&amp;year=2014&amp;month=1&amp;day='+str(day)# 请求网络地址得到html网页代码html = request.urlopen(url)# 整理代码soup = BeautifulSoup(html, 'html.parser')# 找出所有的 a 标签， 因为所有的链接都在 a 标签内data = soup.find_all('a')# 遍历所有的 a 标签， 获取它们的 href 属性的值和它们的 textfor item in data:if item.
+
+        
+            <a href="https://erichuanhuan.github.io/post/20200116/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://erichuanhuan.github.io/post/one/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -311,6 +367,10 @@ CREATE TABLE ais_message_5_realtime SELECT * FROM ais_message_5 WHERE 1=2
                 
                     <li>
                         <a href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">树莓派AIS/ADS-B合二为一 </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/20200116/">one</a>
                     </li>
                 
                     <li>
