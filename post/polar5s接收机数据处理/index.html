@@ -1,0 +1,729 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://erichuanhuan.github.io/">
+    <meta name="author" content="Lednerb">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.80.0" />
+    <title>
+        
+           
+               Polar5S接收机数据处理 &vert; 心态平和 慢步缓行
+           
+        
+    </title>
+    <meta name="description" content="Polar5S接收机数据处理 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="Polar5S接收机数据处理">
+    <meta itemprop="description" content="Polar5S接收机数据处理 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="Polar5S接收机数据处理">
+    <meta property="og:description" content="Polar5S接收机数据处理 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/68936eae826ac5f9f00810e22e862807?size=200">
+    <meta property="og:url" content="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">
+    <meta property="og:site_name" content="心态平和 慢步缓行">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" rel="alternate" type="application/rss+xml" title="心态平和 慢步缓行" />
+    <link href="/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" rel="feed" type="application/rss+xml" title="心态平和 慢步缓行" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://erichuanhuan.github.io/theme.css">
+
+    
+
+    
+        
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/image/head.jpg" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        心态平和 慢步缓行
+                    </a>
+                </h3>
+
+                
+                    <span class="subtitle">KEEP KEEP KEEP</span>
+                
+            </div>
+
+            <div class="languages">
+                
+                    
+                        <a href="https://erichuanhuan.github.io/" class="active">en</a>
+                    
+                
+                    
+                        <a href="https://erichuanhuan.github.io/de/">de</a>
+                    
+                
+                </div>
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">
+            Polar5S接收机数据处理
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-01-16</span>
+            
+        
+
+        
+
+        
+
+        
+    </div>
+
+    
+        
+
+        <h1 id="polar5s接收机数据处理">Polar5S接收机数据处理</h1>
+<p>同事新购置了一台Polar5S接收机，对照说明书艰难进行了配置，发现各方面还是很麻烦。现在将配置的一些过程整理一下。</p>
+<h2 id="接收机初始化配置">接收机初始化配置</h2>
+<p>这个基本上按照说明书直接配置就可以了，我使用的是有线网络进行的配置，设备也支持无线wifi、串口等好几种方式进行设置。需要说明的是web页面仅提供接收机设置，其在接收机本身存储的rinex格式数据，不知道什么原因会存在丢数据的情况。</p>
+<h2 id="自带工具进行数据采集">自带工具进行数据采集</h2>
+<p>接收机随机自带了  rxtools_19_0_1_installer.exe  这个工具。该工具实在强悍，提供了接收机设置、数据采集、数据转换、定位分析等多种功能。我们的需求是需要获取接收机的TEC和S4，该数据存放在 “SEPT012A.21_.ismr” 这样的一个文件中。接收机提供的原始数据厂家没有提供数据格式说明，我们采样率比较高，因此原始数据（文件名：SEPT012A.21_）很大，将近1.5G，为了后期进行算法比对，因此使用 rxtools_ 提供的 sbf2rin 该工具进行Rinex格式数据的转换，关于转换在 rxtools_ 提供的pdf文件中有具体的说明。Rinex2.X的版本没有北斗数据，需要注意。因此我转换成了3.X的版本，该工具目前支持最高3.04的版本。</p>
+<h2 id="数据转换代码">数据转换代码</h2>
+<p>使用了C#进行编写。</p>
+<p>基本功能：
+1）每天定时处理前一天的数据，包括 转换为rinex格式的观测数据和星历数据（星历转换目前的方法比较笨，转换了三个文件。）
+2）转换后的数据上传ftp
+3）判断有无闪烁（非常基本的方法），如果无，删除原始观测数据（太大了，没法保存啊）</p>
+<p>ftp使用了第三方FtpWeb的类。稳定性和可靠性有待观察。</p>
+<pre><code>namespace Polar5S数据处理软件
+{
+/*
+ * 定时运行，计算前一天的年积日，获取该文件夹下的所有文件
+ * 
+ * 使用命令进行数据转换   30秒的rinex观测数据 以及 星历数据
+ * 
+ * 
+ * 
+ * 调用wget进行数据回传
+ * 
+ * 
+ * */
+
+public partial class Form1 : Form
+{
+    private static string CmdPath = @&quot;C:\Windows\System32\cmd.exe&quot;;
+
+    string INIfile = Application.StartupPath + &quot;\\INI\\SYS.INI&quot;;
+
+    private System.Timers.Timer timer_monitor;
+    private object locktimerdela = new object();
+    private object locktimerismr = new object();
+    public delegate void MyInvoke(string str);
+
+    string ftp_ip = &quot;&quot;, ftp_user = &quot;&quot;, ftp_pass = &quot;&quot;;
+    string filepath = &quot;&quot;;
+    private System.Timers.Timer timer_sint_check;
+    double minele = 0;
+    public Form1()
+    {
+        InitializeComponent();
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        if (!File.Exists(INIfile))
+        {
+            MessageBox.Show(&quot;初始化文件不存在，请确认!&quot;);
+            showClientMsg_Rizhi(&quot;初始化文件不存在，请确认!&quot;);
+            return;
+        }
+
+        //获取Polar5S数据文件路径
+        filepath = Win32API.INIGetStringValue(INIfile, &quot;文件路径&quot;, &quot;路径&quot;, null);
+        this.label_File_Path.Text = filepath;
+
+        //获取FTP信息
+        ftp_ip = Win32API.INIGetStringValue(INIfile, &quot;FTP&quot;, &quot;IP&quot;, null);
+        ftp_user = Win32API.INIGetStringValue(INIfile, &quot;FTP&quot;, &quot;USER&quot;, null);
+        ftp_pass = Win32API.INIGetStringValue(INIfile, &quot;FTP&quot;, &quot;PASS&quot;, null);
+        this.label_ftp_IP.Text = ftp_ip;
+
+        string strminele = Win32API.INIGetStringValue(INIfile, &quot;最小仰角&quot;, &quot;ELE&quot;, null);
+
+        if (strminele != &quot;&quot;)
+            minele = Convert.ToDouble(strminele);
+
+        timer_monitor = new System.Timers.Timer(10 * 1000);
+        timer_monitor.Elapsed += new System.Timers.ElapsedEventHandler(timer_monitor_Elapsed);
+        timer_monitor.Start();
+
+        timer_sint_check = new System.Timers.Timer(10 * 1000);
+        timer_sint_check.Elapsed += new System.Timers.ElapsedEventHandler(timer_SintCheck_Elapsed);
+        timer_sint_check.Start();
+
+        richTextBox1.MaxLength = 1024;
+
+        //FtpWeb ftp = new FtpWeb(&quot;119.3.52.225&quot;, &quot;&quot;, &quot;ftpadmin&quot;, &quot;Cetc22s304&quot;);
+
+        //ftp.Upload(&quot;e:\\SEPT006W.21_.ismr&quot;);
+
+
+        //获取天数
+
+
+        //DateTime dtime = new DateTime(2021, 1, 12, 0, 0, 0);
+
+        //int doy = dtime.DayOfYear;
+        //int doy = DateTime.Now.DayOfYear;
+
+    }
+
+    private void timer_SintCheck_Elapsed(object sender, ElapsedEventArgs e)
+    {
+        lock(locktimerismr)
+        {
+            FtpWeb ftp = new FtpWeb(ftp_user, &quot;&quot;, ftp_user, ftp_pass);
+
+            DateTime dt = DateTime.Now;
+            if (dt.ToString(&quot;HH:mm&quot;) == &quot;10:00&quot;)
+            {
+                int doy = DateTime.Now.AddDays(-1).DayOfYear;
+                int year = DateTime.Now.AddDays(-1).Year;
+                string sname = year.ToString().Substring(2, 2) + doy.ToString(&quot;d3&quot;);
+
+                List&lt;FileInfo&gt; list = new List&lt;FileInfo&gt;();
+
+                //string filepath = @&quot;E:\polardata\&quot;;
+                
+                list = GetFilesByDir(filepath + sname, &quot;_.ismr&quot;);
+
+                for (int i = 0; i &lt; list.Count; i++)
+                {
+                    //查找ISMR文件 
+                    //1. 上传文件
+                    Log(list[i].ToString()+&quot;正在上传&quot;);
+                    showClientMsg_Rizhi(list[i].ToString() + &quot;正在上传&quot;);
+                    //上传FTP
+                    ftp.Upload(filepath + sname + &quot;\\&quot; + list[i].ToString());
+                    
+                    //2.判断有无闪烁，无闪烁时，删除当前时刻的原始观测数据
+                    bool b_sint = PanduanSint(filepath + sname + &quot;\\&quot; + list[i].ToString());
+
+                    if (b_sint)
+                    {
+                        Log(list[i].ToString() + &quot; 有闪烁&quot;);
+                        showClientMsg_Rizhi(list[i].ToString() + &quot; 有闪烁&quot;);
+
+                        //SEPT012A.21_.ismr
+                        string yuanshishuju = list[i].ToString().Substring(0, list[i].ToString().Length - 5);
+
+                        if(File.Exists(filepath + sname + &quot;\\&quot; + yuanshishuju))
+                        {
+                            File.Delete(filepath + sname + &quot;\\&quot; + yuanshishuju);
+                            Log(list[i].ToString() + &quot; 删除数据&quot;);
+                            showClientMsg_Rizhi(list[i].ToString() + &quot; 删除数据&quot;);
+                        }                                
+                    }
+                }
+            }
+        }
+    }
+
+    private bool PanduanSint(string filename)
+    {
+        bool b_sint = false; ;
+        StreamReader sr = new StreamReader(filename);
+
+        string strout;
+        int num = 0;
+
+        while((strout = sr.ReadLine())!=&quot;&quot;)
+        {
+            string[] array;
+            array = strout.Split(',');
+            if(array.Length &gt; 8)
+            {
+                double ele = 0, S4 = 0;
+                if (array[5] == &quot;nan&quot;)
+                    ele = 0;
+                else
+                    ele = Convert.ToDouble(array[5]);
+
+                if (array[7] == &quot;nan&quot;)
+                    S4 = 0;
+                else
+                    S4 = Convert.ToDouble(array[7]);
+
+                if (ele &gt;= minele &amp;&amp; S4 &gt;= 0.5)
+                    num++;
+
+                if (num &gt; 5)
+                    break;
+            }
+        }
+
+        sr.Close();
+
+        if (num &gt; 5)
+            b_sint = true;
+        else
+            b_sint = false;
+        return b_sint;
+    }
+
+
+    private void timer_monitor_Elapsed(object sender, ElapsedEventArgs e)
+    {
+        lock (locktimerdela)
+        {
+            FtpWeb ftp = new FtpWeb(ftp_user, &quot;&quot;, ftp_user, ftp_pass);
+            DateTime dt = DateTime.Now;
+            if(dt.ToString(&quot;HH:mm&quot;) == &quot;09:00&quot;)
+            {
+                int doy = DateTime.Now.AddDays(-1).DayOfYear;
+                int year = DateTime.Now.AddDays(-1).Year;
+                string sname = year.ToString().Substring(2, 2) + doy.ToString(&quot;d3&quot;);
+
+                List&lt;FileInfo&gt; list = new List&lt;FileInfo&gt;();
+
+                //string filepath = @&quot;E:\polardata\&quot;;
+                
+                list = GetFilesByDir(filepath + sname, &quot;.21_&quot;);
+
+                for (int i = 0; i &lt; list.Count; i++)
+                {
+                    string ss = GetHour(list[i].ToString().Substring(7, 1));
+                    string rinex_O = list[i].ToString().Substring(0, 7) + ss + list[i].ToString().Substring(8, 3) + &quot;O&quot;; //观测数据
+                    string rinex_N = list[i].ToString().Substring(0, 7) + ss + list[i].ToString().Substring(8, 3) + &quot;N&quot;; //gps星历数据
+                    string rinex_I = list[i].ToString().Substring(0, 7) + ss + list[i].ToString().Substring(8, 3) + &quot;I&quot;; //北斗星历
+                    string rinex_G = list[i].ToString().Substring(0, 7) + ss + list[i].ToString().Substring(8, 3) + &quot;G&quot;; //北斗星历
+
+                    string cmd = @&quot;C:&amp;cd C:\Program Files (x86)\Septentrio\RxTools\bin&amp;sbf2rin -f &quot; + filepath + sname + &quot;\\&quot;
+                        + list[i].ToString()
+                        + &quot; -o &quot; + filepath + sname + &quot;\\&quot; + rinex_O + &quot; -R3 -E QZSL1CA+QZSL2C+QZSL5+QZSL1C+QZSL1S+SBSL1+SBSL5+IRNL5+GALE1+GALE5a+GALE5b+GALE5+GALE6 -i 30&quot;;  //-R210
+
+                    string output = &quot;&quot;;
+                    RunCmd(cmd, out output);
+                    Log(output);
+                    showClientMsg_Rizhi(output);
+                    //上传FTP
+                    ftp.Upload(filepath + sname + &quot;\\&quot; + rinex_O);
+                    Log(&quot;数据上传ftp&quot;);
+                    showClientMsg_Rizhi(&quot;数据上传ftp&quot;);
+
+                    cmd = @&quot;C:&amp;cd C:\Program Files (x86)\Septentrio\RxTools\bin&amp;sbf2rin -f &quot; + filepath + sname + &quot;\\&quot;
+                        + list[i].ToString()
+                        + &quot; -o &quot; + filepath + sname + &quot;\\&quot; + rinex_N + &quot; -R3 -n N -c&quot;;
+                    RunCmd(cmd, out output);
+                    Log(output);
+                    showClientMsg_Rizhi(output);
+                    //上传FTP
+                    ftp.Upload(filepath + sname + &quot;\\&quot; + rinex_N);
+                    Log(&quot;数据上传ftp&quot;);
+                    showClientMsg_Rizhi(&quot;数据上传ftp&quot;);
+
+                    cmd = @&quot;C:&amp;cd C:\Program Files (x86)\Septentrio\RxTools\bin&amp;sbf2rin -f &quot; + filepath + sname + &quot;\\&quot;
+                        + list[i].ToString()
+                        + &quot; -o &quot; + filepath + sname + &quot;\\&quot; + rinex_G + &quot; -R3 -n G -c&quot;;
+                    RunCmd(cmd, out output);
+                    Log(output);
+                    showClientMsg_Rizhi(output);
+                    //上传FTP
+                    ftp.Upload(filepath + sname + &quot;\\&quot; + rinex_G);
+                    Log(&quot;数据上传ftp&quot;);
+                    showClientMsg_Rizhi(&quot;数据上传ftp&quot;);
+
+                    cmd = @&quot;C:&amp;cd C:\Program Files (x86)\Septentrio\RxTools\bin&amp;sbf2rin -f &quot; + filepath + sname + &quot;\\&quot;
+                        + list[i].ToString()
+                        + &quot; -o &quot; + filepath + sname + &quot;\\&quot; + rinex_I + &quot; -R3 -n I -c&quot;;
+                    RunCmd(cmd, out output);
+                    Log(output);
+                    showClientMsg_Rizhi(output);
+                    //上传FTP
+                    ftp.Upload(filepath + sname + &quot;\\&quot; + rinex_I);
+                    Log(&quot;数据上传ftp&quot;);
+                    showClientMsg_Rizhi(&quot;数据上传ftp&quot;);
+
+                }
+            }
+        }
+    }
+
+    private string GetHour(string strzimu)
+    {
+        string ss = &quot;&quot;;
+        if (strzimu == &quot;A&quot;)
+            ss = &quot;0&quot;;
+        else if (strzimu == &quot;B&quot;)
+            ss = &quot;1&quot;;
+        else if (strzimu == &quot;C&quot;)
+            ss = &quot;2&quot;;
+        else if (strzimu == &quot;D&quot;)
+            ss = &quot;3&quot;;
+        else if (strzimu == &quot;E&quot;)
+            ss = &quot;4&quot;;
+        else if (strzimu == &quot;F&quot;)
+            ss = &quot;5&quot;;
+        else if (strzimu == &quot;G&quot;)
+            ss = &quot;6&quot;;
+        else if (strzimu == &quot;H&quot;)
+            ss = &quot;7&quot;;
+        else if (strzimu == &quot;I&quot;)
+            ss = &quot;8&quot;;
+        else if (strzimu == &quot;J&quot;)
+            ss = &quot;9&quot;;
+        else if (strzimu == &quot;K&quot;)
+            ss = &quot;10&quot;;
+        else if (strzimu == &quot;L&quot;)
+            ss = &quot;11&quot;;
+        else if (strzimu == &quot;M&quot;)
+            ss = &quot;12&quot;;
+        else if (strzimu == &quot;N&quot;)
+            ss = &quot;13&quot;;
+        else if (strzimu == &quot;O&quot;)
+            ss = &quot;14&quot;;
+        else if (strzimu == &quot;P&quot;)
+            ss = &quot;15&quot;;
+        else if (strzimu == &quot;Q&quot;)
+            ss = &quot;16&quot;;
+        else if (strzimu == &quot;R&quot;)
+            ss = &quot;17&quot;;
+        else if (strzimu == &quot;S&quot;)
+            ss = &quot;18&quot;;
+        else if (strzimu == &quot;T&quot;)
+            ss = &quot;19&quot;;
+        else if (strzimu == &quot;U&quot;)
+            ss = &quot;20&quot;;
+        else if (strzimu == &quot;V&quot;)
+            ss = &quot;21&quot;;
+        else if (strzimu == &quot;W&quot;)
+            ss = &quot;22&quot;;
+        else if (strzimu == &quot;X&quot;)
+            ss = &quot;23&quot;;
+        return ss;
+    }
+    
+    private List&lt;FileInfo&gt; GetFilesByDir(string path,string houzhui)
+    {
+        DirectoryInfo di = new DirectoryInfo(path);
+        //找到该目录下的文件
+        FileInfo[] fi = di.GetFiles();
+        //把FileInfo[]数组转换为List    
+        List&lt;FileInfo&gt; list = new List&lt;FileInfo&gt;();
+
+        for (int i = 0; i &lt; fi.Length; i++)
+        {
+            string filestr = fi[i].Name;
+            if ((filestr.Substring(filestr.LastIndexOf(&quot;.&quot;))) == houzhui)
+            {
+                //if (filestr.Contains(&quot;_bui&quot;) || filestr.Contains(&quot;_BUI&quot;))
+                list.Add(fi[i]);
+            }
+        }
+        return list;
+    }
+
+    /// &lt;summary&gt;
+    /// 执行cmd命令
+    /// 多命令请使用批处理命令连接符：
+    /// &lt;![CDATA[
+    /// &amp;:同时执行两个命令
+    /// |:将上一个命令的输出,作为下一个命令的输入
+    /// &amp;&amp;：当&amp;&amp;前的命令成功时,才执行&amp;&amp;后的命令
+    /// ||：当||前的命令失败时,才执行||后的命令]]&gt;
+    /// 其他请百度
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;cmd&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;output&quot;&gt;&lt;/param&gt;
+    public static void RunCmd(string cmd, out string output)
+    {
+        cmd = cmd.Trim().TrimEnd('&amp;') + &quot;&amp;exit&quot;;//说明：不管命令是否成功均执行exit命令，否则当调用ReadToEnd()方法时，会处于假死状态
+        using (Process p = new Process())
+        {
+            p.StartInfo.FileName = CmdPath;
+            p.StartInfo.UseShellExecute = false;        //是否使用操作系统shell启动
+            p.StartInfo.RedirectStandardInput = true;   //接受来自调用程序的输入信息
+            p.StartInfo.RedirectStandardOutput = true;  //由调用程序获取输出信息
+            p.StartInfo.RedirectStandardError = true;   //重定向标准错误输出
+            p.StartInfo.CreateNoWindow = true;          //不显示程序窗口
+            p.Start();//启动程序
+
+            //向cmd窗口写入命令
+            p.StandardInput.WriteLine(cmd);
+            p.StandardInput.AutoFlush = true;
+
+            //获取cmd窗口的输出信息
+            output = p.StandardOutput.ReadToEnd();
+            p.WaitForExit();//等待程序执行完退出进程
+            p.Close();
+        }
+    }
+
+
+    public void showClientMsg_Rizhi(string msg)
+    {
+        //在线程里以安全方式调用控件
+        if (richTextBox1.InvokeRequired)
+        {
+            MyInvoke _myinvoke = new MyInvoke(showClientMsg_Rizhi);
+            richTextBox1.Invoke(_myinvoke, new object[] { msg });
+        }
+        else
+        {
+            richTextBox1.AppendText(DateTime.Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot; : &quot; + msg + &quot;\r\n&quot;);
+        }
+    }
+
+    public void Log(string logMssage)
+    {
+        if (!Directory.Exists(Application.StartupPath + &quot;//log&quot;))
+        {
+            DirectoryInfo di = Directory.CreateDirectory(Application.StartupPath + &quot;//log&quot;);
+        }
+
+        string filelogname = Application.StartupPath + &quot;\\log\\&quot; + DateTime.Now.ToString(&quot;yyyy-MM&quot;) + &quot;.log&quot;;
+        FileStream fs = new FileStream(filelogname, FileMode.Append);
+        StreamWriter sw = new StreamWriter(fs);
+        sw.WriteLine(&quot; 日志： &quot;);
+        sw.WriteLine(&quot; 时间：{0} {1}&quot;, DateTime.Now.ToLongTimeString(), DateTime.Now.ToLongDateString());
+        sw.WriteLine(&quot; 信息：{0}&quot;, logMssage);
+        sw.WriteLine(&quot;-------------------------------------------&quot;);
+        sw.Flush();
+        sw.Close();
+    }
+
+}
+</code></pre>
+<p>}</p>
+<p>##下一步工作</p>
+<p>顺便学习了一下RTLIB，发现该程序实在 强 ，（同时也是有感 要学要用的为什么这么多。。） VS版本的软件已经编译通过，git下载源码，编译，出错，百度，google，出错，继续，，，然后 就可以了。。但是有关主函数的调用还是不是很清楚，目前可以进行单点定位的计算，中间过程输出了仰角方位角，但是有待检验。。   继续慢行，继续学习。。。   心中所想</p>
+
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/20201227%E8%BF%90%E5%8A%A8/">一起来投篮吧</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">树莓派AIS/ADS-B合二为一 </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">Polar5S接收机数据处理</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/20200116/">爬虫下载电离图数据</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/one/">one</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://twitter.com/TheRealLednerb" target="_blank"><i class="fab fa-twitter"></i></a>
+                
+                <a href="https://github.com/Lednerb" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+
+            <div class="languages">
+                <strong>Other languages</strong>
+                
+                
+                <a href="https://erichuanhuan.github.io/" class="active">en</a>
+                
+                
+                
+                <a href="https://erichuanhuan.github.io/de/">de</a>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                2017
+                
+                by Lednerb
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://erichuanhuan.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="Y2C4RWMPXW">
+  <input type="hidden" id="algolia-search-apiKey" value="50ea7f8c41c0ad233926e0be2b769ed1">
+  <input type="hidden" id="algolia-search-indexName" value="default-content">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+</body>
+
+</html>

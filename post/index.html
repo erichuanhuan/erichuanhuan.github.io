@@ -232,6 +232,65 @@ from rtlsdr import RtlSdr sdr = RtlSdr() # configure device sdr.sample_rate = 2.
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">
+            Polar5S接收机数据处理
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-01-16</span>
+            
+        
+
+        
+
+        
+
+        
+    </div>
+
+    
+        Polar5S接收机数据处理 同事新购置了一台Polar5S接收机，对照说明书艰难进行了配置，发现各方面还是很麻烦。现在将配置的一些过程整理一下。
+接收机初始化配置 这个基本上按照说明书直接配置就可以了，我使用的是有线网络进行的配置，设备也支持无线wifi、串口等好几种方式进行设置。需要说明的是web页面仅提供接收机设置，其在接收机本身存储的rinex格式数据，不知道什么原因会存在丢数据的情况。
+自带工具进行数据采集 接收机随机自带了 rxtools_19_0_1_installer.exe 这个工具。该工具实在强悍，提供了接收机设置、数据采集、数据转换、定位分析等多种功能。我们的需求是需要获取接收机的TEC和S4，该数据存放在 “SEPT012A.21_.ismr” 这样的一个文件中。接收机提供的原始数据厂家没有提供数据格式说明，我们采样率比较高，因此原始数据（文件名：SEPT012A.21_）很大，将近1.5G，为了后期进行算法比对，因此使用 rxtools_ 提供的 sbf2rin 该工具进行Rinex格式数据的转换，关于转换在 rxtools_ 提供的pdf文件中有具体的说明。Rinex2.X的版本没有北斗数据，需要注意。因此我转换成了3.X的版本，该工具目前支持最高3.04的版本。
+数据转换代码 使用了C#进行编写。
+基本功能： 1）每天定时处理前一天的数据，包括 转换为rinex格式的观测数据和星历数据（星历转换目前的方法比较笨，转换了三个文件。） 2）转换后的数据上传ftp 3）判断有无闪烁（非常基本的方法），如果无，删除原始观测数据（太大了，没法保存啊）
+ftp使用了第三方FtpWeb的类。稳定性和可靠性有待观察。
+namespace Polar5S数据处理软件{/** 定时运行，计算前一天的年积日，获取该文件夹下的所有文件* * 使用命令进行数据转换 30秒的rinex观测数据 以及 星历数据* * * * 调用wget进行数据回传* * * */public partial class Form1 : Form{private static string CmdPath = @&quot;C:\Windows\System32\cmd.exe&quot;;string INIfile = Application.StartupPath + &quot;\\INI\\SYS.INI&quot;;private System.Timers.Timer timer_monitor;private object locktimerdela = new object();private object locktimerismr = new object();public delegate void MyInvoke(string str);string ftp_ip = &quot;&quot;, ftp_user = &quot;&quot;, ftp_pass = &quot;&quot;;string filepath = &quot;&quot;;private System.
+
+        
+            <a href="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://erichuanhuan.github.io/post/20200116/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -367,6 +426,10 @@ CREATE TABLE ais_message_5_realtime SELECT * FROM ais_message_5 WHERE 1=2
                 
                     <li>
                         <a href="https://erichuanhuan.github.io/post/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%88%E4%BA%8C%E4%B8%BA%E4%B8%80%E8%AE%BE%E7%BD%AE/">树莓派AIS/ADS-B合二为一 </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://erichuanhuan.github.io/post/polar5s%E6%8E%A5%E6%94%B6%E6%9C%BA%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">Polar5S接收机数据处理</a>
                     </li>
                 
                     <li>
